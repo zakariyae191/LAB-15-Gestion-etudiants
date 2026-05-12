@@ -1,5 +1,11 @@
 # SQLiteStudentCRUD
 
+
+
+https://github.com/user-attachments/assets/02564ce5-0990-43a0-bcf0-9ad8b42b2444
+
+
+
 ## Objectif
 
 L'objectif de ce TP est de créer une application Android simple qui permet de gérer des étudiants avec une base de données SQLite locale.
@@ -103,19 +109,7 @@ La suppression par ID retire l'étudiant de la base de données.
 
 Des messages Toast confirment chaque action, et la liste des étudiants est affichée dans Logcat après chaque ajout.
 
-## Captures d'écran
 
-![Interface principale](screenshots/interface.png)
-
-![Ajout étudiant](screenshots/add.png)
-
-![Recherche étudiant](screenshots/search.png)
-
-![Suppression étudiant](screenshots/delete.png)
-
-![Logcat](screenshots/logcat.png)
-
-## Explication des concepts
 
 ### SQLiteOpenHelper
 
@@ -143,19 +137,7 @@ Exemple :
 values.put("nom", e.getNom());
 ```
 
-### Cursor
 
-`Cursor` représente le résultat d'une requête SQL.
-
-`moveToFirst()` permet de lire la première ligne du résultat.
-
-`getInt()` et `getString()` permettent de récupérer les valeurs des colonnes.
-
-### Service
-
-`EtudiantService` sépare la logique CRUD de l'interface.
-
-`MainActivity` appelle le service sans écrire directement les requêtes SQLite.
 
 ### CRUD
 
